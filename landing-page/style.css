@@ -1,0 +1,188 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    min-width: 405px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    display: flex;
+    background-color: #219EF7;
+    min-height: 75px;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.53);
+    -moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.53);
+    box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.53);
+}
+nav > ul{
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 28px;
+}
+li{
+    list-style: none;
+    
+}
+.logo{
+    width: 55vw;
+    margin: auto 0 auto 20px;
+}
+.form-email{
+    margin-top: 15px;
+    border: none;
+    height: 1.7rem;
+    width: 100%;
+    border-radius: 5px;
+    border: #ced4da solid 1px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 10px 10px;
+    max-width: 220px;
+    margin-bottom: 10px;
+}
+.form-email:focus{
+    outline: 0;
+    border-color: #219EF7;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+
+}
+
+
+.logo > img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    
+}
+.welcome-part-container{
+    height: 28rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        rgba(58, 58, 58, 0.445),
+        rgba(58, 58, 58, 0.445)
+    ),
+    url(img/ipad-tablet-and-macbook-laptop-workspace-from-above_free_stock_photos_picjumbo_hnck2126-2210x1474.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.welcome-part-container-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.text-container{
+    margin-top: 5rem;
+}
+.submit-btn{
+    width: 100%;
+    max-width: 220px;
+    height: 2.0rem;
+    border-radius: 5px;
+    background-color: #FAC12C;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    color: white;
+}
+.main-container{
+    background-color:;
+    height: 100vw;
+    margin: 1rem 5rem 0 5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0 0 0;
+}
+.event-packages-desc{
+    width: 100%;
+    padding: 0 100px 0 100px;
+    min-width: 300px;
+    margin-bottom: 4rem;
+}
+.event-packages-kits{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box-kit-param{
+    height: 250px;
+    width: 170px;
+    min-width: 170px;
+    border: 1px solid #E3E5E6;
+    margin: 0 0.75rem 30px 0.75rem;
+    text-align: center;
+    padding: 20px 15px 0px 15px;
+    box-sizing: content-box;
+    -webkit-box-shadow: 0px 10px 13px -7px #E3E5E6, 0px 5px 20px 2px rgba(0,0,0,0.23); 
+    box-shadow: 0px 10px 13px -7px #E3E5E6, 0px 5px 20px 2px rgba(0,0,0,0.23);
+
+}
+.standart-kit{
+    margin-top: 13px;
+}
+
+.premium-kit{
+    background-color: #219EF7;
+    color: white;
+}
+
+.vip-kit{
+    margin-top: 13px;
+}
+.kit-price{
+    margin-bottom: 18px;
+    color: #219EF7;
+}
+
+@media(max-width: 720px){
+    .event-packages-kits{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 675px){
+    nav > ul{
+        width: 75vw;
+    }
+    .logo{
+        width: 25vw;
+    }
+    .main-container{
+        margin: 1rem 1.5rem 0 1.5rem;
+    }
+    .event-packages-desc{
+        padding: 0 30px 0 30px;
+    }
+}
